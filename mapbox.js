@@ -19,7 +19,7 @@ const feature = features[0];
 const popup = new mapboxgl.Popup({ offset: [0, -15] })
 .setLngLat(feature.geometry.coordinates)
 .setHTML(
-    `<img src='image/${feature.properties.Image}' />
+    `<img src='${feature.properties.Image}' />
     <h2><a href = '${feature.properties.URL}'>${feature.properties.Name}</a></h2>`
 )
 .addTo(map);
